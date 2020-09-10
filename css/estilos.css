@@ -23,14 +23,14 @@ body{
 	position: absolute;
 	top: 0;
 	/*border-width: 35vh 100vw ;*/ /*Triangulo Cool*/
-	border-width: 20vh 100vw 0 0;
+	border-width: 35vh 100vw 0 0;
 	border-style: solid;
 	border-color: white transparent transparent transparent;
 }
 .skew-abajo{
 	position: absolute;
 	bottom: 0;
-	border-width: 0 0 20vh 100vw;
+	border-width: 0 0 35vh 100vw;	
 	border-style: solid;
 	border-color: transparent transparent white transparent;
 }
@@ -44,6 +44,8 @@ body{
 	width: 100%;
 	height: 700px;
 	background: url(../img/Skewed.png) center/cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 
 	position: relative;
 	display: flex;
@@ -203,11 +205,13 @@ body{
 /*       Section Clients        */
 .clients{
 	background: url(../img/fondo.png) center/cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 	color: #fff;
 	width: 100%;
 	margin-top: 50px;
-	padding-top: 5vh;
-	padding-bottom: 20vh;
+	padding-top: 10vh;
+	padding-bottom: 35vh;
 	position: relative;
 
 }
@@ -221,7 +225,7 @@ body{
 	font-size: 60px;
 	margin-bottom: 10px;
 }
-.clients-text__text{
+.clients-text__parrafo{
 	font-size: 20px;
 }
 .clients-logos{
@@ -242,13 +246,13 @@ body{
 	font-size: 20px;
 }
 .skew-abajo--clients{
-	border-color: transparent transparent #155151 transparent;
+	border-color: transparent transparent #2c3e50 transparent;
 }
 /*       Section Clients        */
 
 /*       Footer      */
 .contact{
-	background: #155151;
+	background: #2c3e50;
 	width: 100%;
 	padding-bottom: 20px;
 }
@@ -261,7 +265,7 @@ body{
 	font-size: 50px;
 	margin-bottom: 10px;
 }
-.contact-text__text{
+.contact-text__parrafo{
 	font-size: 20px;
 }
 .contact-form{
@@ -274,34 +278,44 @@ body{
 }
 .contact-form-box__name,
 .contact-form-box__email{
-	background: #000;
-	color: gray;
 	border: none;
+	border-top: 5px solid rgba(37, 37, 33, .7);
+	background: rgba(37, 37, 33, .7);
+	color: #fff;
 	padding: 10px;
 	width: 48%;
+	transition: all ease .5s;
+	margin-bottom: 20px;
 }
-
+.contact-form-box__name:focus,
+.contact-form-box__email:focus{
+	border-color: #fff;
+}
 .contact-form__textarea{
-	margin-top: 20px;
 	width: 100%;
 	height: 200px;
-	background: #000;
-	color: gray;
+	background: rgba(37, 37, 33, .7);
+	color: #fff;
 	border: none;
 	padding: 10px;
 	resize: none;
+	transition: all ease .5s;
+}
+.contact-form__textarea:focus{
+	border-top: 5px solid #fff;
 }
 .contact-form__button{
 	margin-top: 10px;
 	display: block;
 	border: none;
-	background: #000;
-	color: gray;
+	background: rgba(37, 37, 33, .7);
+	color: #fff;
 	border: none;
 	padding: 10px 30px;
-
+	cursor: pointer;
 }
 /*       Footer      */
+
 @media screen and (max-width: 800px) {
 	.main-section__title{
 		font-size: 60px;
@@ -327,8 +341,30 @@ body{
 	.team-boxT__text{
 		font-size: 18px;
 	}
+	.clients-text__title{
+		font-size: 45px;
+	}
+	.clients-text__parrafo{
+		font-size: 18px;
+	}
+	.clients__text-final{
+		font-size: 18px;
+	}
 	.clients-logos__img{
 		width: 45%;
+	}
+	.contact-text__title{
+		font-size: 40px;
+	}
+	.contact-text__parrafo{
+		font-size: 18px;
+	}
+	.contact-form-box{
+		flex-direction: column;
+	}
+	.contact-form-box__name,
+	.contact-form-box__email{
+		width: 100%;
 	}
 	
 }
@@ -357,8 +393,22 @@ body{
 	.team-boxT__text{
 		font-size: 16px;
 	}
+	.clients-text__title{
+		font-size: 30px;
+	}
+	.clients-text__parrafo{
+		font-size: 16px;
+	}
+	.clients__text-final{
+		font-size: 16px;
+	}
 	.clients-logos__img{
 		width: 90%;
 	}
-	
+	.contact-text__title{
+		font-size: 30px;
+	}
+	.contact-text__parrafo{
+		font-size: 16px;
+	}
 }
