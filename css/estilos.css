@@ -1,0 +1,364 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-size: 16px;
+	font-family: sans-serif;
+}
+/*       Reutilizable        */
+
+.btn{
+	border: 1px solid white;
+	border-radius: 20px;
+	padding: 10px 30px;
+	background: none;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+}
+
+.skew-arriba{
+	position: absolute;
+	top: 0;
+	/*border-width: 35vh 100vw ;*/ /*Triangulo Cool*/
+	border-width: 20vh 100vw 0 0;
+	border-style: solid;
+	border-color: white transparent transparent transparent;
+}
+.skew-abajo{
+	position: absolute;
+	bottom: 0;
+	border-width: 0 0 20vh 100vw;
+	border-style: solid;
+	border-color: transparent transparent white transparent;
+}
+
+
+
+/*       Reutilizable        */
+
+/*       Section Main        */
+.main-section{
+	width: 100%;
+	height: 700px;
+	background: url(../img/Skewed.png) center/cover;
+
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main-section-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	text-align: center;
+}
+.main-section__title{
+	font-size: 80px;
+}
+.main-section__sub-title{
+	margin: 15px 0 30px 0;
+	font-size: 30px;
+}
+/*       Section Main        */
+
+/*       Section About-US        */
+.about-us{
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.about-us-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: 90%;
+}
+.about-us__title{
+	font-size: 60px;
+}
+.about-us__sub-title{
+	font-size: 25px;
+	margin:  20px 0;
+	font-weight: 300;
+}
+.about-us__text{
+	text-align: justify;
+	line-height: 25px;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.about-us__btn{
+	color: #000;
+	border-color: #000;
+	align-self: flex-start;
+	margin-bottom: 20px;
+}
+/*       Section About-US        */
+
+/*       Section Gallery        */
+.gallery{
+	width: 100%;
+	display: flex;
+	position: relative;
+}
+.gallery-box-img{
+	width: 20%;
+	height: 500px;
+}
+.gallery-box{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 20%;
+
+	background: #2a373c;
+	color: #fff;
+	text-align: center;
+}
+.gallery-box__text{
+	font-size: 25px;
+	font-weight: 900;
+}
+.gallery-box__barra{
+	height: 2px;
+	margin-top: 15px;
+	color: #fff;
+	width: 60px;
+}
+.gallery__img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/*       Section Gallery        */
+
+/*       Section Team        */
+.team{
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.team-box-title{
+	text-align: center;
+}
+.team-boxT__title{
+	font-size: 50px;
+}
+.team-boxT__text{
+	font-size: 20px;
+	font-weight: normal;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.team-box-cards{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+	grid-gap: 20px;
+	
+
+	width: 90%;
+	margin: auto;
+}
+.team__card{
+	width: 100%;
+	height: 250px;
+
+	padding: 20px;
+	margin: 20px 0;
+	text-align: center;
+
+	box-shadow: 0 0 4px 0 rgba(0,0,0,.8)
+}
+.team__card-img{
+	margin-top: 10px;
+	object-fit: cover;
+	border-radius: 100%;
+	height: 150px;
+	width: 150px;
+}
+.team__card-title{
+	font-size: 18px;
+}
+.team__card-text{
+	margin-bottom: 30px;
+}
+
+/*       Section Team        */
+
+/*       Section Clients        */
+.clients{
+	background: url(../img/fondo.png) center/cover;
+	color: #fff;
+	width: 100%;
+	margin-top: 50px;
+	padding-top: 5vh;
+	padding-bottom: 20vh;
+	position: relative;
+
+}
+.clients-text{
+	padding-top: 150px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.clients-text__title{
+	font-size: 60px;
+	margin-bottom: 10px;
+}
+.clients-text__text{
+	font-size: 20px;
+}
+.clients-logos{
+	display: flex;
+	justify-content: space-evenly;
+	flex-flow: row wrap;
+}
+.clients-logos__img{
+	display: block;
+	width: 30%;
+	height: 100%;
+	object-fit: cover;
+	margin-bottom: 20px;
+}
+.clients__text-final{
+	margin-top: 20px;
+	text-align: center;
+	font-size: 20px;
+}
+.skew-abajo--clients{
+	border-color: transparent transparent #155151 transparent;
+}
+/*       Section Clients        */
+
+/*       Footer      */
+.contact{
+	background: #155151;
+	width: 100%;
+	padding-bottom: 20px;
+}
+.contact-text{
+	text-align: center;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.contact-text__title{
+	font-size: 50px;
+	margin-bottom: 10px;
+}
+.contact-text__text{
+	font-size: 20px;
+}
+.contact-form{
+	width: 80%;
+	margin: 0 auto;
+}
+.contact-form-box{
+	display: flex;
+	justify-content: space-between;
+}
+.contact-form-box__name,
+.contact-form-box__email{
+	background: #000;
+	color: gray;
+	border: none;
+	padding: 10px;
+	width: 48%;
+}
+
+.contact-form__textarea{
+	margin-top: 20px;
+	width: 100%;
+	height: 200px;
+	background: #000;
+	color: gray;
+	border: none;
+	padding: 10px;
+	resize: none;
+}
+.contact-form__button{
+	margin-top: 10px;
+	display: block;
+	border: none;
+	background: #000;
+	color: gray;
+	border: none;
+	padding: 10px 30px;
+
+}
+/*       Footer      */
+@media screen and (max-width: 800px) {
+	.main-section__title{
+		font-size: 60px;
+	}
+	.main-section__sub-title{
+		font-size: 25px;
+	}
+	.about-us__title{
+		font-size: 50px;
+	}
+	.about-us__sub-title{
+		font-size: 22px;
+	}
+	.gallery-box__text{
+		font-size: 18px;
+	}
+	.gallery-box__barra{
+		width: 40px;
+	}
+	.team-boxT__title{
+		font-size: 40px;
+	}
+	.team-boxT__text{
+		font-size: 18px;
+	}
+	.clients-logos__img{
+		width: 45%;
+	}
+	
+}
+@media screen and (max-width: 500px) {
+	.main-section__title{
+		font-size: 40px;
+	}
+	.main-section__sub-title{
+		font-size: 20px;
+	}
+	.about-us__title{
+		font-size: 40px;
+	}
+	.about-us__sub-title{
+		font-size: 18px;
+	}
+	.gallery-box__text{
+		font-size: 14px;
+	}
+	.gallery-box__barra{
+		width: 30px;
+	}
+	.team-boxT__title{
+		font-size: 30px;
+	}
+	.team-boxT__text{
+		font-size: 16px;
+	}
+	.clients-logos__img{
+		width: 90%;
+	}
+	
+}

@@ -5,36 +5,51 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Descripcion de la pagina">
 	<title>Page Skew</title>
-<!-- 	<link rel="stylesheet" href="archivo.css">
-	<link rel="shortcut icon" href=""> -->
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="shortcut icon" href="img/Alex.png">
 </head>
 <body>
 	<header class="main-section">
-		<h1 class="main-section__title">Santiago Desing</h1>
-		<h2 class="main-section__sub-title">Desarrollo de sitios web</h2>
-		<button class="btn main-section__btn">Suscribete</button>
+		<div class="main-section-text">		
+			<h1 class="main-section__title">Santiago Desing</h1>
+			<h2 class="main-section__sub-title">Desarrollo de sitios web</h2>
+			<button class="btn main-section__btn">Suscribete</button>
+		</div>
+		<div class="skew-abajo"></div>
 	</header>
 	<main>
 		<section class="about-us">
-			<h2 class="about-us__title">Sobre nosotros</h2>		
-			<h3 class="about-us__sub-title">Tirando c&oaccute;digo en la web</h3>
-			<p class="about-us__text">
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium nihil temporibus iure provident nostrum at, recusandae eaque assumenda non iusto eius nemo fugiat reiciendis alias, dolorem. Sed, nisi ipsam ab beatae dolor architecto quidem dicta earum necessitatibus eum, ad cumque deserunt tempore tenetur quasi similique deleniti aliquid assumenda natus molestias nobis impedit! Similique consectetur, incidunt, praesentium, iusto quae perspiciatis odit voluptatum qui ratione, esse sint odio nam reiciendis labore eos.
-			</p>
-			<p class="about-us__text">
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium nihil temporibus iure provident nostrum at, recusandae eaque assumenda non iusto eius nemo fugiat reiciendis alias, dolorem. Sed, nisi ipsam ab beatae dolor architecto quidem dicta earum necessitatibus eum, ad cumque deserunt tempore tenetur quasi similique deleniti aliquid assumenda natus molestias nobis impedit! Similique consectetur, incidunt, praesentium, iusto quae perspiciatis odit voluptatum qui ratione, esse sint odio nam reiciendis labore eos.
-			</p>
-			<button class="btn about-us__btn">Suscribete</button>
+			<article class="about-us-text">	
+				<h2 class="about-us__title">Sobre nosotros</h2>		
+				<h3 class="about-us__sub-title">Tirando c&oacute;digo en la web</h3>
+				<p class="about-us__text">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium nihil temporibus iure provident nostrum at, recusandae eaque assumenda non iusto eius nemo fugiat reiciendis alias, dolorem. Sed, nisi ipsam ab beatae dolor architecto quidem dicta earum necessitatibus eum, ad cumque deserunt tempore tenetur quasi similique deleniti aliquid assumenda natus molestias nobis impedit! Similique consectetur, incidunt.
+				</p>
+				<p class="about-us__text">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium nihil temporibus iure provident nostrum at, recusandae eaque assumenda non iusto eius nemo fugiat reiciendis alias, dolorem. Sed, nisi ipsam ab beatae dolor architecto quidem dicta earum necessitatibus eum, ad cumque deserunt tempore tenetur quasi similique deleniti aliquid assumenda natus molestias nobis impedit! Similique consectetur.
+				</p>
+				<button class="btn about-us__btn">Suscribete</button>
+			</article>
 		</section>
 		<section class="gallery">
-			<img src="img/1.jpg" alt="" class="gallery__img" width="100">
-			<img src="img/2.jpg" alt="" class="gallery__img" width="100">
-			<div class="gallery-box">
-1				<p class="gallery-box">Santiago Desing</p>
-				<hr class="gallery-box__barra">
-			</div>
-			<img src="img/3.jpg" alt="" class="gallery__img" width="100">
-			<img src="img/4.jpeg" alt="" class="gallery__img" width="100">					
+				<div class="skew-arriba"></div>	
+				<div class="gallery-box-img">
+					<img src="img/1.jpg" alt="" class="gallery__img" >
+				</div>
+				<div class="gallery-box-img">
+					<img src="img/2.jpg" alt="" class="gallery__img" >
+				</div>
+				<div class="gallery-box">
+				<p class="gallery-box__text">Santiago Desing</p>
+					<hr class="gallery-box__barra">
+				</div>
+				<div class="gallery-box-img">
+					<img src="img/3.jpg" alt="" class="gallery__img">
+				</div>
+				<div class="gallery-box-img">
+					<img src="img/4.jpeg" alt="" class="gallery__img">
+				</div>				
+				<div class="skew-abajo"></div>			
 		</section>
 		<section class="team">
 			<article class="team-box-title">
@@ -43,13 +58,24 @@
 			</article>
 			<article class="team-box-cards">
 				<div class="team__card">
-					<img src="img/AlexCGDesing.png" alt="" class="team__card-img">
+					<img src="img/Alex.png" alt="" class="team__card-img" width="100">
+					<h3 class="team__card-title">Santiago Desing</h3>
+					<p class="team__card-text">Lorem ipsum dolor sit.</p>
+				</div>
+				<div class="team__card">
+					<img src="img/Alex.png" alt="" class="team__card-img" width="100">
+					<h3 class="team__card-title">Santiago Desing</h3>
+					<p class="team__card-text">Lorem ipsum dolor sit.</p>
+				</div>
+				<div class="team__card">
+					<img src="img/Alex.png" alt="" class="team__card-img" width="100">
 					<h3 class="team__card-title">Santiago Desing</h3>
 					<p class="team__card-text">Lorem ipsum dolor sit.</p>
 				</div>
 			</article>
 		</section>
 		<section class="clients">
+			<div class="skew-arriba"></div>
 			<article class="clients-text">
 				<h2 class="clients-text__title">Nuestros Clientes</h2>
 				<p class="clients-text__text">
@@ -62,6 +88,7 @@
 				<img src="img/logo.png" alt="" class="clients-logos__img">
 			</article>
 			<p class="clients__text-final">Y muchos clientes mas...</p>
+			<div class="skew-abajo skew-abajo--clients"></div>
 		</section>
 	</main>
 	<footer class="contact">
@@ -74,9 +101,19 @@
 				<input type="text" class="contact-form-box__name" placeholder="Nombre">
 				<input type="email" class="contact-form-box__email" placeholder="Email">
 			</div>
-			<textarea class="contact-form__textarea" placeholder="Mensaje"></textarea>
+				<textarea class="contact-form__textarea" placeholder="Mensaje"></textarea>
 			<button class="contact-form__button">Enviar</button>
 		</form>
 	</footer>
-</body>
+
+<!-- 			<div class="clients-logos-box">
+					<img src="img/logo.png" alt="" class="clients-logos__img">
+				</div>
+				<div class="clients-logos-box">
+					<img src="img/logo.png" alt="" class="clients-logos__img">
+				</div>
+				<div class="clients-logos-box">
+					<img src="img/logo.png" alt="" class="clients-logos__img">			
+				</div>
+ --></body>
 </html>
