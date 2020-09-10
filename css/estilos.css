@@ -23,14 +23,14 @@ body{
 	position: absolute;
 	top: 0;
 	/*border-width: 35vh 100vw ;*/ /*Triangulo Cool*/
-	border-width: 35vh 100vw 0 0;
+	border-width: 20vh 100vw 0 0;
 	border-style: solid;
 	border-color: white transparent transparent transparent;
 }
 .skew-abajo{
 	position: absolute;
 	bottom: 0;
-	border-width: 0 0 35vh 100vw;	
+	border-width: 0 0 20vh 100vw;	
 	border-style: solid;
 	border-color: transparent transparent white transparent;
 }
