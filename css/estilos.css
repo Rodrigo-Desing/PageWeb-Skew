@@ -43,7 +43,7 @@ body{
 .main-section{
 	width: 100%;
 	height: 700px;
-	background: url(../img/Skewed.png) center/cover;
+	background: url(../img/Skew.jpg) center/cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 
@@ -204,7 +204,7 @@ body{
 
 /*       Section Clients        */
 .clients{
-	background: url(../img/fondo.png) center/cover;
+	background: linear-gradient(rgba(0, 4, 242, 0.5),rgba(0, 255, 0, 0.5)), url(../img/1.jpg) center / cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	color: #fff;
