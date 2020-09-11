@@ -316,6 +316,67 @@ body{
 }
 /*       Footer      */
 
+
+/*           Modal           */
+.modal{
+	background: rgba(0,0,0,.5);
+	position:fixed;
+	top: 0;
+	margin: auto;
+	width: 100%;
+	height: 100vh;
+
+	visibility: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: 
+}
+.modal-slider{
+	width:80%;
+	margin: auto;
+	position: relative;
+	transition: transform .5s;
+	transform: translateY(-200%);
+}
+.modal-slider--open{
+	transform: translateY(0%);
+}
+.modal-slider__list{
+	overflow-x: hidden;
+}
+.modal-slider__img{
+	width: 100%;
+	height: 600px;
+	object-fit: cover;
+}
+.modal-slider-contenedor{
+	position: relative;
+}	
+.modal-slider__anterior,
+.modal-slider__siguiente{
+	position: absolute;
+	display: block;
+	border: none;
+	padding: 20px 10px;
+	background: rgba(0,0,0,.8);
+	color: gray;
+	cursor: pointer;
+	text-align: center;
+	line-height: 30px;
+	top: calc(50% - 35px);
+}
+
+.modal-slider__anterior{
+	left: -28px;
+}
+.modal-slider__siguiente{
+	right: -28px;
+}
+.modal-slider__anterior:hover,
+.modal-slider__siguiente:hover{
+	color: #fff;
+}
+/*           Modal           */
 @media screen and (max-width: 800px) {
 	.main-section__title{
 		font-size: 60px;
@@ -366,6 +427,9 @@ body{
 	.contact-form-box__email{
 		width: 100%;
 	}
+	.modal-slider__img{
+		height: 500px;
+	}
 	
 }
 @media screen and (max-width: 500px) {
@@ -410,5 +474,8 @@ body{
 	}
 	.contact-text__parrafo{
 		font-size: 16px;
+	}
+	.modal-slider__img{
+		height: 300px;
 	}
 }
